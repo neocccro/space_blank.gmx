@@ -9,7 +9,9 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\test.gml</script>
+    <scripts name="player">
+      <script>scripts\script1.gml</script>
+    </scripts>
   </scripts>
   <help>
     <rtf>help.rtf</rtf>
