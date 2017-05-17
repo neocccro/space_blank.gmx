@@ -13,6 +13,9 @@
       <script>scripts\script1.gml</script>
     </scripts>
   </scripts>
+  <objects name="objects">
+    <object>objects\object0</object>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
