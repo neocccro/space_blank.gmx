@@ -14,6 +14,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+<<<<<<< HEAD
     <script>scripts\test.gml</script>
     <script>scripts\scr_Player_OnCreate.gml</script>
     <script>scripts\scr_Player_OnStep.gml</script>
@@ -30,6 +31,15 @@
     <room>rooms\room0</room>
     <room>rooms\room1</room>
   </rooms>
+=======
+    <scripts name="player">
+      <script>scripts\script1.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <object>objects\object0</object>
+  </objects>
+>>>>>>> origin/master
   <help>
     <rtf>help.rtf</rtf>
   </help>
