@@ -1,2 +1,2 @@
-dit is een test scirpt 
-hoe gaat het :)
+/* dit is een test scirpt 
+hoe gaat het :) */
