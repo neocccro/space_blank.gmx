@@ -7,26 +7,100 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Collectable</sprite>
-    <sprite>sprites\spr_Player</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\spr_SpeedUp</sprite>
+    <sprite>sprites\spr_SpeedDown</sprite>
+    <sprite>sprites\test</sprite>
+    <sprite>sprites\spr_Enemy</sprite>
+    <sprites name="player_sprites">
+      <sprite>sprites\spr_Player</sprite>
+      <sprite>sprites\spr_Player_invis</sprite>
+      <sprite>sprites\spr_Player2</sprite>
+    </sprites>
+    <sprite>sprites\sprite8</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_Collectable_OnCreate.gml</script>
-    <script>scripts\scr_Collectable_OnDraw.gml</script>
-    <script>scripts\scr_Collectable_OnStep.gml</script>
-    <script>scripts\scr_Player_OnCreate.gml</script>
-    <script>scripts\scr_Player_OnDraw.gml</script>
-    <script>scripts\scr_Player_OnStep.gml</script>
+    <scripts name="Collectables">
+      <scripts name="SpeedUp">
+        <script>scripts\scr_speedUp_OnStep.gml</script>
+        <script>scripts\scr_speedUp_OnDraw.gml</script>
+        <script>scripts\scr_SpeedUp_OnCreate.gml</script>
+      </scripts>
+      <scripts name="SpeedDown">
+        <script>scripts\scr_speedDown_OnStep.gml</script>
+        <script>scripts\scr_speedDown_OnDraw.gml</script>
+      </scripts>
+      <scripts name="CollectableScore">
+        <script>scripts\scr_Collectable_OnCreate.gml</script>
+        <script>scripts\scr_Collectable_OnStep.gml</script>
+        <script>scripts\scr_Collectable_OnDraw.gml</script>
+      </scripts>
+      <scripts name="Immunity">
+        <script>scripts\scr_Immunity_OnStep.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Player">
+      <script>scripts\scr_Player_OnCreate.gml</script>
+      <script>scripts\scr_Player_OnStep.gml</script>
+      <script>scripts\scr_Player_OnDraw.gml</script>
+      <scripts name="Player2">
+        <script>scripts\scr_Player2_onCreate.gml</script>
+        <script>scripts\scr_Player2_OnStep.gml</script>
+        <script>scripts\scr_Player2_OnDraw.gml</script>
+      </scripts>
+      <script>scripts\scr_Player_OnAlarm.gml</script>
+    </scripts>
+    <scripts name="coen_Player_scripts">
+      <script>scripts\scr_player_movement_drag.gml</script>
+      <script>scripts\scr_player_draw.gml</script>
+      <script>scripts\scr_player_create.gml</script>
+      <script>scripts\scr_player_update.gml</script>
+      <script>scripts\scr_player_movement_gravity.gml</script>
+      <script>scripts\scr_player_movement_input.gml</script>
+      <script>scripts\scr_player_movement_acceleration.gml</script>
+    </scripts>
+    <scripts name="Timer">
+      <script>scripts\scr_Timer_OnCreate.gml</script>
+      <script>scripts\scr_Timer_OnStep.gml</script>
+      <script>scripts\scr_Timer_OnDraw.gml</script>
+    </scripts>
+    <scripts name="Player Select">
+      <script>scripts\scr_player_1.gml</script>
+      <script>scripts\scr_player_2.gml</script>
+    </scripts>
+    <scripts name="Lives">
+      <script>scripts\scr_Lives_OnCreate.gml</script>
+      <script>scripts\scr_Lives_OnStep.gml</script>
+      <script>scripts\scr_Lives_OnDraw.gml</script>
+      <scripts name="Extra_Lives">
+        <script>scripts\scr_Hurt_OnStep.gml</script>
+        <script>scripts\scr_LivesAdd_OnStep.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_Player</object>
-    <object>objects\object0</object>
-    <object>objects\object1</object>
+    <object>objects\obj_SpeedUp</object>
+    <object>objects\obj_Collectable</object>
+    <object>objects\obj_SpeedDown</object>
+    <object>objects\obj_Enemy</object>
+    <object>objects\obj_Timer</object>
+    <object>objects\obj_ExtraLives</object>
+    <object>objects\object6</object>
+    <objects name="Players">
+      <object>objects\obj_Player</object>
+      <object>objects\object7</object>
+      <objects name="Player_select">
+        <object>objects\obj_player_select</object>
+        <object>objects\obj_player_select_2</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room2</room>
     <room>rooms\room0</room>
+    <room>rooms\room02</room>
     <room>rooms\room1</room>
   </rooms>
   <help>
