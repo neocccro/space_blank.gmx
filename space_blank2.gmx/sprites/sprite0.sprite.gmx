@@ -10,7 +10,7 @@
   <bbox_left>0</bbox_left>
   <bbox_right>62</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>99</bbox_bottom>
+  <bbox_bottom>100</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,8 +18,8 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>63</width>
-  <height>100</height>
+  <height>101</height>
   <frames>
-    <frame index="0">images\sprite8_0.png</frame>
+    <frame index="0">images\sprite0_0.png</frame>
   </frames>
 </sprite>

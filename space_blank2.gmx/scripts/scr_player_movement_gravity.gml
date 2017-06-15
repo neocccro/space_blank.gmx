@@ -1,2 +1,1 @@
-ySpeed -= weight * weightMultiplier;
-
+ySpeed -= weight * weightMultiplier * finalSpeedMultiplier;
