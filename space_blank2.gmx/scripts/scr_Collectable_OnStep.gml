@@ -1,18 +1,34 @@
-if (place_meeting(x,y,obj_Player)){
-    score += 1;
+rotation += (rotationSpeed/360)%1;
+
+
+
+if(collision_circle(x,y,30*global.scale,player,false,true) && collectable != 3)
+{
+    switch(collectable)// 0 = damage, 1 = fuel, 2 = speedUp
+    {
+        case 0:
+            player.fuel -= 10;
+            if(player.fuel < 0)
+            {
+                player.fuel = 0;
+            }
+        break;
+        case 1:
+            player.fuel += 5;
+        break;
+            case 2:
+            player.originalSpeedMultiplier *= 1.01;
+            global.scale *= 1.02;
+        break;
+    }
     instance_destroy();
 }
 
-if (place_meeting(x,y,object7)){
-    score += 1;
-    instance_destroy();
-}
-/*
-if score == 10{
-room_goto(room1);
-}
+scr_collectable_movement();
 
-if (place_meeting(x,y,obj_Player)){
-    moveSpeed += 2;
+
+
+if(x > (room_width+room_height)*global.scale || y > (room_width+room_height)*global.scale)
+{
     instance_destroy();
-}*/
+}
