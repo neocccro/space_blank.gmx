@@ -1,0 +1,2 @@
+xSpeed /= dragMultiplier;
+ySpeed /= dragMultiplier;
