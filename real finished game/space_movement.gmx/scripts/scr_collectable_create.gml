@@ -19,6 +19,7 @@ else
     spawnChance[0] = 16;//asteroid
     spawnChance[1] = 2;//fuel
     spawnChance[2] = 1;//speed
+    spawnChance[3] = 0;//cloud
 }
 randomize();
 chance = random(spawnChance[0] + spawnChance[1] + spawnChance[2] + spawnChance[3]);
@@ -48,16 +49,6 @@ switch(collectable)// 0 = damage, 1 = fuel, 2 = speedUp
         {
             subSprite = 3;
             duck_counter = 0;
-            if(random(21) > 20)
-            {
-                myScale = 4;
-                subSprite = 2;
-            }
-            mirrored = floor(random(2))*2-1;
-        }
-        else if(global.myScore < 100000)
-        {
-            subSprite = 3;
             if(random(21) > 20)
             {
                 myScale = 4;
